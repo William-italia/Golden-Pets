@@ -133,3 +133,39 @@ span {
   font-weight: 1;
   z-index: 5;
 }
+
+/* section two */
+.container-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+
+}
+
+
+.content-info {
+  position: relative;
+  background: url(https://source.unsplash.com/1600x900/?cat) no-repeat center center/cover fixed;
+  height: 55%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  z-index: 2;
+  color: #fff;
+}
+
+.content-info::after {
+  content: '';
+  position: absolute;
+  background: #333;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.6;
+  z-index: -2;
+}
