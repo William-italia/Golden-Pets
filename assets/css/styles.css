@@ -69,9 +69,13 @@ span {
   color: var(--primary-color);
 }
 
-.navbar h2 span i:hover {
-  transform: rotate(-354deg);
+
+.pata-logo {
   transition: all 1s ease;
+}
+
+.pata-logo:hover {
+  transform: rotate(-354deg);
 }
 
 .navbar ul  {
@@ -80,16 +84,31 @@ span {
 }
 
 .navbar ul li a {
+  position: relative;
   padding: 0 3rem;
   color: #fff;
-  padding-top: 28px; 
-  padding-bottom: 28px; 
+  letter-spacing: 0.08rem;
+  /* padding-top: 28px;  */
+  /* padding-bottom: 28px;  */
 }
 
-.navbar .border:hover {
-color: var(--primary-color-dark);
-border-bottom: 3px solid var(--primary-color);
+.navbar ul li a::after {
+  content: '';
+  position: absolute;
+  background-color: var(--primary-color);
+  height: 3px;
+  width: 0;
+  left: 0;
+  bottom: -28px;
+  transition: 0.8s ease;
 }
+.navbar ul li a:hover {
+  color: var(--primary-color-dark);
+}
+.navbar ul li a:hover::after {
+  width: 100%;
+}
+
 
 .donate {
   display: inline;
@@ -236,11 +255,11 @@ border-bottom: 3px solid var(--primary-color);
   border: 1px solid var(--primary-color);
  box-shadow: var(--box-color1) 0px 5px, var(--box-color2) 0px 10px, var(--box-color3) 0px 15px, var(--box-color4) 0px 20px, var(--box-color5) 0px 25px;
   border-radius: 10px;
+  transition: all 0.5s ease-in-out;
 }
 
 .container-box .box:hover {
   transform: scale(1.2);
-  transition: all 0.5s ease-in-out;
 }
 
 .icon {
@@ -254,6 +273,7 @@ border-bottom: 3px solid var(--primary-color);
 
 .seta {
   margin-left: 5px;
+  transition: all 1.3s ease;
 }
 
 
@@ -262,8 +282,7 @@ border-bottom: 3px solid var(--primary-color);
 }
 
 .btn-simples:hover .seta {
-  margin-left: 10px;
+  margin-left: 15px;
   color: var(--primary-color-dark);
-  transition: margin-left 1.3s ease;
 }
 
