@@ -85,7 +85,7 @@ span {
 
 .navbar ul li a {
   position: relative;
-  padding: 0 3rem;
+  padding: 1.8rem 3rem;
   color: #fff;
   letter-spacing: 0.08rem;
   /* padding-top: 28px;  */
@@ -99,7 +99,7 @@ span {
   height: 3px;
   width: 0;
   left: 0;
-  bottom: -28px;
+  bottom: -0px;
   transition: 0.8s ease;
 }
 .navbar ul li a:hover {
@@ -129,10 +129,10 @@ span {
   border: none;
   border-radius: 10px;
   margin-top: 5rem;
+  transition: all 2s ease-in;
 }
 
 .btn:hover {
-  transition: 1s;
   background: var(--primary-color-dark);
   color: #eee;
 }
