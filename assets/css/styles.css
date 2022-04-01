@@ -1,5 +1,6 @@
 :root {
-  --primary-color: rgb(14, 210, 254);
+  --primary-color: rgb(14, 210, 254); 
+  --primary-color-dark: rgb(11, 157, 186);
   --box-color1: rgba(14, 210, 254, 0.4);
   --box-color2: rgba(14, 210, 254, 0.3);
   --box-color3: rgba(14, 210, 254, 0.2);
@@ -158,8 +159,8 @@ border-bottom: 3px solid var(--primary-color);
   font-size: 3rem;
   padding-bottom: 2rem;
   /* margin-bottom: 20px; */
-  border-bottom: 2px solid var(--primary-color);
-  transition: border-bottom 1s ease-in-out;
+  border-bottom: 1px solid var(--primary-color);
+  transition: border-bottom 4s ease;
 }
 
 .showcase-content p {
@@ -247,6 +248,7 @@ border-bottom: 3px solid var(--primary-color);
 }
 
 .icon {
+  color: #111;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -256,4 +258,13 @@ border-bottom: 3px solid var(--primary-color);
 
 .seta {
   margin-left: 5px;
+}
+
+.btn-simples:hover  {
+  color: var(--primary-color-dark);
+}
+.btn-simples:hover .seta {
+  margin-left: 10px;
+  color: var(--primary-color-dark);
+  transition: margin-left 1.3s ease;
 }
