@@ -80,18 +80,14 @@ span {
 }
 
 .navbar ul li a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
   padding: 0 3rem;
   color: #fff;
-  padding-top: 28px;
-  padding-bottom: 28px;
+  padding-top: 28px; 
+  padding-bottom: 28px; 
 }
 
 .navbar .border:hover {
-color: var(--primary-color);
+color: var(--primary-color-dark);
 border-bottom: 3px solid var(--primary-color);
 }
 
@@ -260,11 +256,14 @@ border-bottom: 3px solid var(--primary-color);
   margin-left: 5px;
 }
 
+
 .btn-simples:hover  {
   color: var(--primary-color-dark);
 }
+
 .btn-simples:hover .seta {
   margin-left: 10px;
   color: var(--primary-color-dark);
   transition: margin-left 1.3s ease;
 }
+
