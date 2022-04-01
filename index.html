@@ -13,22 +13,22 @@
 </head>
 <body>
   <header class="hero">
-    <div id="navbar" class="navbar">
+    <div id="navbar" class="navbar top">
       <h2><span><i class="fas fa-paw"></i></span> Golden<span> Pets</span></h2>
       <nav>
         <ul>
-          <li><a href="#">Menu</a></li>
-          <li><a href="#section-one">Sobre</a></li>
-          <li><a href="#">Contato</a></li>
-          <li><a href="#">Nosso Site</a></li>
+          <li><a class="border" href="#">Menu</a></li>
+          <li><a class="border" href="#section-one">Sobre</a></li>
+          <li><a class="border" href="#">Contato</a></li>
+          <li><a class="border" href="#">Nosso Site</a></li>
           <ul>
-            <div>
-              <a href="#" class="donate">Donate</a>
-            </div>
           </ul>
-        </ul>
-      </nav>
-    </div>
+        </nav>
+        <div>
+          <a href="#" class="donate">Donate</a>
+        </div>
+      </ul>
+      </div>
     <div class="showcase-container">
       <div class="showcase-content">
         <h1><span>Lorem</span> ipsum <span>Pet</span> quea</h1>
@@ -39,34 +39,57 @@
   </header>
 
   <main>
-  <section id="section-one" class="bg-dark">
+  <section id="section-one" class="bg-light">
     <div class="container-info">
       <div class="content-info">
         <h2>Sobre</h2>
         <div class="container-box">
           <div class="box1">
-            <i class="fas fa-cat"></i>
+            <i class="fas fa-cat icon"></i>
             <h3>Adoção</h3>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda, doloLorem ipsum dolor, sit ametsit amet consectetur adipisicing elit. Assumenda, doloLorem ipsum dolor, sit amet cons consectetur adipisicing elit. Assumenda, dolor</p>
-            <p><a href="" class="btn-simples">Read More</a></p>
+            <p><a href="" class="btn-simples">Read More<span><i class="fas fa-arrow-right seta"></i></span></a></p>
           </div>
           <div class="box2">
-            <i class="fas fa-person"></i>
+            <i class="fas fa-person icon"></i>
             <h3>Dog Walker</h3>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda, doloLorem ipsum dolor, sit amet conssit amet consectetur adipisicing elit. Assumenda, doloLorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda, dolor</p>
-            <p><a href="" class="btn-simples">Read More</a></p>
+            <p><a href="" class="btn-simples">Read More<span><i class="fas fa-arrow-right seta"></i></span></a></p>
           </div>
           <div class="box3">
-            <i class="fas fa-dog"></i>
+            <i class="fas fa-dog icon"></i>
             <h3>Procura-se</h3>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda, doloLorem ipsum dolor, sit ametsit amet consectetur adipisicing elit. Assumenda, doloLorem ipsum dolor, sit amet cons consectetur adipisicing elit. Assumenda, dolor</p>
-            <p><a href="" class="btn-simples">Read More</a></p>
+            <p><a href="" class="btn-simples">Read More<span><i class="fas fa-arrow-right seta"></i></span></a></p>
           </div>
         </div>
       </div>
     </div>
   </section>
+
+  
   </main>
   <script src="https://kit.fontawesome.com/e8e3befd8e.js" crossorigin="anonymous"></script>
+  <script>
+    const navbar = document.getElementById('navbar')
+    let scrolled = false;
+
+    window.onscroll = function () {
+      if(window.pageYOffset > 100) {
+        navbar.classList.remove('top');
+        if(!scrolled) {
+          navbar.style.transform = 'translateY(-75px)';
+        }
+        setTimeout(function() {
+          navbar.style.transform = 'translateY(0)';
+          scrolled = true;
+        }, 200);
+      }
+      else {
+        navbar.classList.add('top')
+        scrolled = false;
+      }
+    };
+  </script>
 </body>
 </html>

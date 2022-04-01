@@ -8,6 +8,10 @@
   background: #555;
 }
 
+.bg-light {
+  background: #fff;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -36,16 +40,20 @@ a {
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  height: 80px;
-  font-size: 1.1rem;
-  background: rgba(0, 0, 0, 0.692);
+  height: 75px;
+  font-size: 1rem;
+  background: rgb(0, 0, 0);
   color: #fff;
-  padding: 0 20px;
+  padding: 0 5rem;
   z-index: 10;
 }
 
+.navbar.top {
+  background: transparent;
+}
+
 .navbar h2 {
-  font-size: 2rem;
+  font-size: 1.7rem;
 }
 
 span {
@@ -64,10 +72,18 @@ span {
 
 .navbar ul li a {
   display: flex;
+  justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 0 2rem;
+  padding: 0 3rem;
   color: #fff;
+  padding-top: 28px;
+  padding-bottom: 28px;
+}
+
+.navbar .border:hover {
+color: var(--primary-color);
+border-bottom: 3px solid var(--primary-color);
 }
 
 .donate {
@@ -77,7 +93,7 @@ span {
   padding: 13px 30px;
   font-size: 1rem;
   border-radius: 10px;
-  margin-left: 120px;
+  /* margin-left: 120px; */
 }
 
 .btn {
@@ -90,6 +106,10 @@ span {
   margin-top: 5rem;
 }
 
+.btn-simples {
+  color: var(--primary-color);
+}
+
 .showcase-container {
   display: flex;
   align-items: center;
@@ -100,15 +120,16 @@ span {
 }
 
 .showcase-content {
+  width: 100%;
+  height: 100%;
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  text-align: center;
   padding: 0 5rem;
   background: url(https://source.unsplash.com/1600x900/?cats) no-repeat center center/cover;
-  height: 100%;
-  width: 100%;
   z-index: 1;
 }
 
@@ -120,13 +141,13 @@ span {
   height: 100%;
   position: absolute;
   background: #333;
-  opacity: 0.8;
+  opacity: 0.7;
   z-index: -1;
 }
 
 .showcase-content h1 {
   color: #fff;
-  font-size: 4rem;
+  font-size: 3rem;
   padding-bottom: 2rem;
   /* margin-bottom: 20px; */
   border-bottom: 2px solid var(--primary-color);
@@ -136,7 +157,7 @@ span {
 .showcase-content p {
   padding-top: 1.5rem;
   color: #fff;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   font-weight: 1;
   z-index: 5;
   margin: 0 8rem;
@@ -162,7 +183,8 @@ span {
   justify-content: center;
   width: 100%;
   /* border: 20px solid rgba(5, 5, 5, 0.482); */
-  border: 20px solid  rgba(0, 190, 254, 0.253);
+  border-top: 15px solid  rgba(0, 190, 254, 0.285);
+  border-bottom: 15px solid  rgba(0, 190, 254, 0.285);
   background: url(https://source.unsplash.com/1600x900/?dogs) no-repeat center center/cover fixed;
   z-index: 5;
 }
@@ -182,7 +204,7 @@ span {
 .content-info h2 {
   padding: 2rem;
   font-size: 3rem;
-  color: white;
+  color: #fff;
 }
 
 .container-box {
@@ -203,16 +225,15 @@ span {
   justify-content: center;
   margin: 0 5rem;
   padding: 1rem 2rem;
-  color: #fff;
-  background: rgba(0, 0, 0, 0.689);
+  color: #333;
+  background:  #fff;
+  border: 1px solid rgb(132, 218, 247);
  box-shadow: rgba(46, 172, 240, 0.4) 0px 5px, rgba(46, 198, 240, 0.3) 0px 10px, rgba(46, 179, 240, 0.2) 0px 15px, rgba(46, 195, 240, 0.1) 0px 20px, rgba(46, 188, 240, 0.05) 0px 25px;
   border-radius: 10px;
   margin-bottom: 3rem;
 }
 
-.box1 i,
-.box2 i,
-.box3 i {
+.icon {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -220,4 +241,8 @@ span {
   width: 100%;
   font-size: 2rem;
   margin-bottom: 15px;
+}
+
+.seta {
+  margin-left: 5px;
 }
