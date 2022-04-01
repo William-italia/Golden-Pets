@@ -1,8 +1,16 @@
 :root {
-  /* --primary-color: rgb(255, 207, 0); */
-  /* --primary-color: rgb(0, 221, 255); */
-  --primary-color: rgb(0, 190, 254);
+  --primary-color: rgb(14, 210, 254);
+  --box-color1: rgba(14, 210, 254, 0.4);
+  --box-color2: rgba(14, 210, 254, 0.3);
+  --box-color3: rgba(14, 210, 254, 0.2);
+  --box-color4: rgba(14, 210, 254, 0.1);
+  --box-color5: rgba(14, 210, 254, 0.05);
 }
+
+
+
+
+
 
 .bg-dark {
   background: #555;
@@ -183,8 +191,8 @@ border-bottom: 3px solid var(--primary-color);
   justify-content: center;
   width: 100%;
   /* border: 20px solid rgba(5, 5, 5, 0.482); */
-  border-top: 15px solid  rgba(0, 190, 254, 0.285);
-  border-bottom: 15px solid  rgba(0, 190, 254, 0.285);
+  border-top: 15px solid var(--box-color1);
+  border-bottom: 15px solid  var(--box-color1);
   background: url(https://source.unsplash.com/1600x900/?dogs) no-repeat center center/cover fixed;
   z-index: 5;
 }
@@ -212,13 +220,14 @@ border-bottom: 3px solid var(--primary-color);
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 1250px;
-
+  margin-bottom: 5rem;
 }
 
 .container-box .box1,
 .container-box .box2,
 .container-box .box3 {
+  width: 250px;
+  height: 100%;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -227,18 +236,20 @@ border-bottom: 3px solid var(--primary-color);
   padding: 1rem 2rem;
   color: #333;
   background:  #fff;
-  border: 1px solid rgb(132, 218, 247);
- box-shadow: rgba(46, 172, 240, 0.4) 0px 5px, rgba(46, 198, 240, 0.3) 0px 10px, rgba(46, 179, 240, 0.2) 0px 15px, rgba(46, 195, 240, 0.1) 0px 20px, rgba(46, 188, 240, 0.05) 0px 25px;
+  border: 1px solid var(--primary-color);
+ box-shadow: var(--box-color1) 0px 5px, var(--box-color2) 0px 10px, var(--box-color3) 0px 15px, var(--box-color4) 0px 20px, var(--box-color5) 0px 25px;
   border-radius: 10px;
-  margin-bottom: 3rem;
+}
+
+.container-box .box:hover {
+  transform: scale(1.2);
+  transition: all 0.5s ease-in-out;
 }
 
 .icon {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100%;
-  width: 100%;
   font-size: 2rem;
   margin-bottom: 15px;
 }
