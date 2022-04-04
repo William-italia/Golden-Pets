@@ -6,26 +6,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./assets/css/styles.css">
   <title>Golden Pets</title>
-  <style>
-    
 
-  </style>
 </head>
 <body>
   <header class="hero">
     <div id="navbar" class="navbar top">
-      <h2><span><i class="pata-logo fas fa-paw"></i></span> Golden<span> Pets</span></h2>
+      <div class="logo">
+        <h2><span><i class="pata-logo fas fa-paw"></i></span> Golden<span> Pets</span></h2>
+      </div>
         <nav>
           <ul>
             <li><a class="border" href="#">Menu</a></li>
             <li><a class="border" href="#section-one">Sobre</a></li>
-            <li><a class="border" href="#">Contato</a></li>
+            <li><a class="border" href="#section-two">Contato</a></li>
             <li><a class="border" href="#">Nosso Site</a></li>
           </ul>
         </nav>
-        <div>
-          <a href="#" class="donate">Donate</a>
-        </div>
     </div>
     <div class="showcase-container">
       <div class="showcase-content">
@@ -41,21 +37,22 @@
     <div class="container-info">
       <div class="content-info">
         <h2>Sobre</h2>
+        <div class="linha"></div>
         <div class="container-box">
           <div class="box box1">
-            <i class="fas fa-cat icon"></i>
+            <i class="fas fa-cat icon-about"></i>
             <h3>Adoção</h3>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda, doloLorem ipsum dolor, sit ametsit amet consectetur adipisicing elit. Assumenda, doloLorem ipsum dolor, sit amet cons consectetur adipisicing elit. Assumenda, dolor</p>
             <p><a href="" class="btn-simples">Read More<span><i class="fas fa-arrow-right seta"></i></span></a></p>
           </div>
           <div class="box box2">
-            <i class="fas fa-person icon"></i>
+            <i class="fas fa-person icon-about"></i>
             <h3>Dog Walker</h3>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda, doloLorem ipsum dolor, sit amet conssit amet consectetur adipisicing elit. Assumenda, doloLorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda, dolor</p>
             <p><a href="" class="btn-simples">Read More<span><i class="fas fa-arrow-right seta"></i></span></a></p>
           </div>
           <div class="box box3">
-            <i class="fas fa-dog icon"></i>
+            <i class="fas fa-dog icon-about"></i>
             <h3>Procura-se</h3>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda, doloLorem ipsum dolor, sit ametsit amet consectetur adipisicing elit. Assumenda, doloLorem ipsum dolor, sit amet cons consectetur adipisicing elit. Assumenda, dolor</p>
             <p><a href="" class="btn-simples">Read More<span><i class="fas fa-arrow-right seta"></i></span></a></p>
@@ -65,9 +62,42 @@
     </div>
   </section>
 
-  <section>
-
+  <section id="section-two" class="bg-dark">
+    <div class="container-form">
+      <div class="content-form">
+        <form>
+          <legend>Contact Me</legend>
+          <div class="box-form form1">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
+          </div>
+          <div class="box-form form1">
+            <label for="name">Sobrenome:</label>
+            <input type="text" id="name" name="name">
+          </div>
+          <div class="box-form form1">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+          </div>
+          <div class="box-form form1">
+            <label for="mensagem">Messege:</label>
+            <textarea name="mensagem" id="mensagem"></textarea>
+          </div>
+          <div class="box-form">
+            <button type="submit">Send Massage</button>
+          </div>
+        </form>
+      </div>
+    </div>
   </section>
+
+  <footer>
+    <div class="container-footer">
+      <div class="content-footer">
+        sad
+      </div>
+    </div>
+  </footer>
   </main>
   <script src="https://kit.fontawesome.com/e8e3befd8e.js" crossorigin="anonymous"></script>
   <script>
