@@ -1,11 +1,11 @@
 :root {
-  --primary-color: rgb(168, 115, 253); 
-  --primary-color-dark: rgb(83, 22, 182);
-  --box-color1: rgba(126, 57, 236, 0.4);
-  --box-color2: rgba(126, 57, 236, 0.3);
-  --box-color3: rgba(126, 57, 236, 0.2);
-  --box-color4: rgba(126, 57, 236, 0.1);
-  --box-color5: rgba(126, 57, 236, 0.05);
+  --primary-color: rgb(115, 253, 251); 
+  --primary-color-dark: rgb(73, 222, 219);
+  --box-color1: rgba(115, 253, 251, 0.4);
+  --box-color2: rgba(115, 253, 251, 0.3);
+  --box-color3: rgba(115, 253, 251, 0.2);
+  --box-color4: rgba(115, 253, 251, 0.1);
+  --box-color5: rgba(115, 253, 251, 0.05);
 }
 
 /* resete css */
